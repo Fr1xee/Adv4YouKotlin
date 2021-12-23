@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraint"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="148dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/line2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="28dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/line"
+                android:minWidth="150dp"
+                app:backgroundTint="#4E596C"
+                app:layout_constraintEnd_toStartOf="@+id/flight"
+                app:layout_constraintStart_toEndOf="@+id/seasonal"
+                app:layout_constraintTop_toBottomOf="@+id/line1"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <Button
+                android:id="@+id/seasonal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="28dp"
+                android:minWidth="200dp"
+                android:text="@string/type_seasonal"
+                android:textAllCaps="false"
+                android:textColor="#FFEAEAEA"
+                app:backgroundTint="#4E596C"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/consistent" />
+
+            <Button
+                android:id="@+id/line1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/line"
+                android:minWidth="150dp"
+                app:backgroundTint="#4E596C"
+                app:layout_constraintEnd_toStartOf="@+id/impulsive"
+                app:layout_constraintStart_toEndOf="@+id/consistent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <Button
+                android:id="@+id/flight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginRight="32dp"
+                android:minWidth="200dp"
+                android:text="@string/type_flight"
+                android:textAllCaps="false"
+                android:textColor="#FFEAEAEA"
+                app:backgroundTint="#4E596C"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/line2"
+                app:layout_constraintTop_toBottomOf="@+id/impulsive" />
+
+            <Button
+                android:id="@+id/impulsive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginRight="32dp"
+                android:minWidth="200dp"
+                android:text="@string/type_impulsive"
+                android:textAllCaps="false"
+                android:textColor="#FFEAEAEA"
+                app:backgroundTint="#4E596C"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/consistent"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="32dp"
+                android:minWidth="200dp"
+                android:text="@string/type_consistent"
+                android:textAllCaps="false"
+                android:textColor="#EAEAEA"
+                app:backgroundTint="#4E596C"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

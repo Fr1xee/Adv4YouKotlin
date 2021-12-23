@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraint"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-28dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/line4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/line"
+                android:minWidth="150dp"
+                app:backgroundTint="#4E596C"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/flight" />
+
+            <Button
+                android:id="@+id/line2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="131dp"
+                android:layout_marginLeft="131dp"
+                android:layout_marginEnd="130dp"
+                android:layout_marginRight="130dp"
+                android:background="@drawable/line"
+                android:minWidth="150dp"
+                app:backgroundTint="#4E596C"
+                app:layout_constraintBottom_toTopOf="@+id/seasonal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/impulsive" />
+
+            <Button
+                android:id="@+id/seasonal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="106dp"
+                android:layout_marginLeft="106dp"
+                android:layout_marginTop="100dp"
+                android:layout_marginEnd="105dp"
+                android:layout_marginRight="105dp"
+                android:minWidth="200dp"
+                android:text="@string/type_seasonal"
+                android:textAllCaps="false"
+                android:textColor="#FFEAEAEA"
+                app:backgroundTint="#4E596C"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/impulsive" />
+
+            <Button
+                android:id="@+id/line1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="131dp"
+                android:layout_marginLeft="131dp"
+                android:layout_marginEnd="130dp"
+                android:layout_marginRight="130dp"
+                android:background="@drawable/line"
+                android:minWidth="150dp"
+                app:backgroundTint="#4E596C"
+                app:layout_constraintBottom_toTopOf="@+id/impulsive"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/consistent" />
+
+            <Button
+                android:id="@+id/flight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="106dp"
+                android:layout_marginLeft="106dp"
+                android:layout_marginTop="100dp"
+                android:layout_marginEnd="105dp"
+                android:layout_marginRight="105dp"
+                android:minWidth="200dp"
+                android:text="@string/type_flight"
+                android:textAllCaps="false"
+                android:textColor="#FFEAEAEA"
+                app:backgroundTint="#4E596C"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/seasonal" />
+
+            <Button
+                android:id="@+id/impulsive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="106dp"
+                android:layout_marginLeft="106dp"
+                android:layout_marginTop="100dp"
+                android:layout_marginEnd="105dp"
+                android:layout_marginRight="105dp"
+                android:minWidth="200dp"
+                android:text="@string/type_impulsive"
+                android:textAllCaps="false"
+                android:textColor="#FFEAEAEA"
+                app:backgroundTint="#4E596C"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/consistent" />
+
+            <Button
+                android:id="@+id/line3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="131dp"
+                android:layout_marginLeft="131dp"
+                android:layout_marginEnd="130dp"
+                android:layout_marginRight="130dp"
+                android:background="@drawable/line"
+                android:minWidth="150dp"
+                app:backgroundTint="#4E596C"
+                app:layout_constraintBottom_toTopOf="@+id/flight"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/seasonal" />
+
+            <Button
+                android:id="@+id/consistent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="70dp"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="70dp"
+                android:layout_marginRight="70dp"
+                android:minWidth="200dp"
+                android:text="@string/type_consistent"
+                android:textAllCaps="false"
+                android:textColor="#EAEAEA"
+                app:backgroundTint="#4E596C"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
